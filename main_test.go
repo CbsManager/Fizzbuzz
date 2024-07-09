@@ -132,4 +132,14 @@ func TestFizzBuzz(t *testing.T) {
 			t.Errorf("Expected %s but got %s", want, got)
 		}
 	})
+
+	t.Run("case 14 should return 14", func(t *testing.T) {
+		want := "14"
+
+		got := FizzBuzz(14)
+
+		if want != got {
+			t.Errorf("Expected %s but got %s", want, got)
+		}
+	})
 }
